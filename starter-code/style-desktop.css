@@ -1,0 +1,314 @@
+
+:root{
+
+    --gray-color: #DFDFDF;
+
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    max-width: 1360px;
+
+}
+
+@media screen and (min-width: 1360px){
+
+    body{
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    
+    }
+
+}
+
+/* MENU */
+
+.burger-menu{
+
+    display: none;
+}
+
+.menu-mobile{
+
+    display: none;
+}
+.menu-banner{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    height: 72px;
+    
+}
+
+.logo{
+
+    background: url(assets/shared/desktop/logo.svg);
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.menu{
+
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+}
+
+.menu-content{
+
+    cursor: pointer;
+}
+
+.menu-content:hover{
+
+    color: var(--gray-color);
+
+}
+
+.menu-content2{
+
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.invite-btn-menu{
+
+    padding: 8px 15px 8px 15px;
+    width: 158px;
+    height: 40px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+
+}
+
+.invite-btn-menu:hover{
+
+    background-color: var(--gray-color);
+    color: black;
+    transition: 0.1s ease-in-out;
+}
+
+
+
+
+/* SECTION 1 */
+
+.section1{
+
+    display: flex;
+
+}
+
+.text-part{
+
+    background-color: black;
+    width: 610px;
+    height: 607px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 110px;
+    padding-right: 110px;
+    position: relative;
+
+}
+
+.text-part::before{
+    
+    content: '';
+    display: block;
+    height: 310px;
+    width: 5px;
+    background: linear-gradient(180deg, rgb(90, 119, 255) 0%, rgb(188, 113, 152) 50%,rgb(255, 197, 147) 100%);
+    position: absolute;
+    left: 0;
+    top: 52%;
+    transform: translateX(-1%) translateY(-48%);
+
+}
+
+.content-title{
+
+    color: white;
+    font-size: 2.3em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.content-text{
+
+    color: rgba(209, 209, 209, 0.74);
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -0.5rem;
+    line-height: 1.4rem;
+
+}
+
+.img-part{
+
+    width: 54%;
+
+}
+
+.img-part img{
+
+    max-width: 775px;
+
+}
+
+.content-article-btn{
+
+    padding: 0;
+    margin-top: 1rem;
+    height: 40px;
+    width: 175px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+
+.content-article-btn:hover{
+
+    text-decoration: underline;
+}
+
+.content-article-btn::after{
+
+    content: '';
+    display: block;
+    height: 30px;
+    width: 45px;
+    background: url(assets/shared/desktop/white-arrow.png);
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 14px;
+
+}
+
+/* SECTION 2 */
+
+.section2{
+
+    display: flex;
+    margin-top: -5px;
+}
+
+
+
+
+.text-part-S2-S3{
+
+    background-color: white;
+    width: 610px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 110px;
+    padding-right: 130px;
+    position: relative;
+
+}
+
+
+.content-title-S2-S3{
+
+    color: black;
+    font-size: 2.3em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.content-text-S2-S3{
+
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -0.5rem;
+    line-height: 1.4rem;
+
+}
+
+.content-article-btn-S2-S3{
+
+    padding: 0;
+    margin-top: 1rem;
+    height: 40px;
+    width: 220px;
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+
+.content-article-btn-S2-S3:hover{
+
+    text-decoration: underline;
+}
+
+.content-article-btn-S2-S3::after{
+
+    content: '';
+    display: block;
+    height: 30px;
+    width: 45px;
+    background: url(assets/shared/desktop/arrow.svg);
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 14px;
+
+}
+
+/* SECTION 3 */
+
+.section3{
+
+    display: flex;
+    margin-top: -5px;
+}
