@@ -11,11 +11,11 @@ body{
     padding: 0;
     font-family: 'DM Sans', sans-serif;
     min-height: 100vh;
-    max-width: 1360px;
+    max-width: 1440px;
 
 }
 
-@media screen and (min-width: 1360px){
+@media screen and (min-width: 1440px){
 
     body{
 
@@ -111,8 +111,6 @@ body{
 }
 
 
-
-
 /* SECTION 1 */
 
 .section1{
@@ -125,7 +123,7 @@ body{
 
     background-color: black;
     width: 610px;
-    height: 607px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,15 +170,10 @@ body{
 
 .img-part{
 
-    width: 54%;
+    width: 58%;
 
 }
 
-.img-part img{
-
-    max-width: 775px;
-
-}
 
 .content-article-btn{
 
@@ -207,16 +200,14 @@ body{
     text-decoration: underline;
 }
 
-.content-article-btn::after{
+.content-article-btn img{
 
     content: '';
     display: block;
-    height: 30px;
+    height: 14px;
     width: 45px;
-    background: url(assets/shared/desktop/white-arrow.png);
-    background-repeat: no-repeat;
-    margin-top: 10px;
     margin-left: 14px;
+    filter: invert(98%) sepia(99%) saturate(6580%) hue-rotate(181deg) brightness(120%) contrast(101%);
 
 }
 
@@ -227,8 +218,6 @@ body{
     display: flex;
     margin-top: -5px;
 }
-
-
 
 
 .text-part-S2-S3{
@@ -311,4 +300,196 @@ body{
 
     display: flex;
     margin-top: -5px;
+}
+
+/* SECTION 4 */
+
+.section4{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: -5px;
+   
+}
+
+.box1{
+
+    background: url(assets/stories/desktop/mountains.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1;
+
+}
+
+.box2{
+
+    background: url(assets/stories/desktop/cityscapes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2;
+
+}
+
+.box3{
+
+    background: url(assets/stories/desktop/18-days-voyage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 3;
+
+}
+
+.box4{
+
+    background: url(assets/stories/desktop/architecturals.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 4;
+
+}
+
+.img-box{
+
+
+    height: 500px;
+    width: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 -185px 50px -40px rgba(0, 0, 0, 0.575);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.img-box:hover{
+
+    transform: translateY(-20px);
+    transition: 0.2s ease-in-out;
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(to left, rgb(90, 119, 255), rgb(188, 113, 152), rgb(255, 197, 147));
+   
+
+}
+
+.box-content{
+
+    color: rgba(255, 255, 255, 0.956);
+    padding: 345px 40px 10px 40px;
+    line-height: 0.7em;
+    position: relative;
+
+}
+
+
+.box-title{
+
+    font-size: 1.23em;
+    font-weight: 500;
+
+}
+
+.author{
+
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 13px;
+
+}
+
+.author::after{
+
+    content: '';
+    display: block;
+    height: 1px;
+    width: 17rem;
+    background-color: rgba(255, 255, 255, 0.301);
+    margin-top: 25px;
+}
+
+
+.story-btn{
+
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.story-btn img{
+
+    filter: invert(98%) sepia(99%) saturate(6580%) hue-rotate(181deg) brightness(120%) contrast(101%);
+    position: absolute;
+    right: 40px;
+    margin-bottom: 3px;
+
+}
+
+
+/* SECTION 5 */
+
+.section5{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.box-S5{
+
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.box-S5-content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title-S5{
+
+    font-weight: 600;
+    font-size: 1.2em;
+
+}
+
+.text-S5{
+
+    color: rgba(128, 128, 128, 0.822);
+    font-size: 14px;
+
+}
+
+
+.box2-S5{
+
+    margin: 70px 30px 0 30px;
+    position: relative;
+
+}
+
+
+.box2-S5 img{
+
+    position: absolute;
+    transform: translateY(-4rem);
+}
+
+.box3-S5{
+
+    height: 218px;
+
 }
